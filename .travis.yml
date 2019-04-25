@@ -11,3 +11,7 @@ jobs:
           script: 
                - echo World
                - env
+        - name: docker 
+          script: 
+              - docker version
+              - docker-compose --version
