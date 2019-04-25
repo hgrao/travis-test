@@ -1,4 +1,13 @@
 language: go
-script: 
-   - echo Hello
-   - env
+services:
+        - docker
+
+jobs:
+        - name: firstjob
+          script: 
+               - echo Hello
+               - env
+        - name: secondjob 
+          script: 
+               - echo World
+               - env
