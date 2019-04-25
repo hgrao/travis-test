@@ -3,6 +3,7 @@ services:
         - docker
 
 jobs:
+   include
         - name: firstjob
           script: 
                - echo Hello
